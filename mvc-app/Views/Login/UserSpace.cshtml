@@ -1,0 +1,10 @@
+﻿@model LoginViewModel
+@using Microsoft.AspNetCore.Http
+@{
+    ViewData["Title"] = "Bienvenido";
+    ViewData["User"] = Context.Session.GetString("User");
+}
+<h1> 
+    @ViewData["Title"]
+    @ViewData["User"]!
+</h1>
